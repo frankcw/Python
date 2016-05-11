@@ -23,7 +23,9 @@ people={
 		}
 
 
-for user in people:
-	print(user['first'].title() + user['last'].title() + 
+for key, user in people.items():
+	print(user['first'].title() + " " +
+		user['last'].title() + 
 		' lives in ' + user['location'].title() + 
-		' and is ' + user['age'])
+		' and is ' + user['age'] +
+		' years of age.')
